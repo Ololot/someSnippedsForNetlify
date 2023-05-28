@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Header.css"
-import { useNavigate, useLocation } from 'react-router';
+import { useNavigate } from 'react-router';
 
 const Header = () => {
 
     const navigate = useNavigate(null);
-    const location = useLocation();
+    // const location = useLocation();
 
     return (
         <div className='header'>
