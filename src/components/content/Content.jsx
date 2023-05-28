@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentSnippets from './content_snippets/Content_snippets';
 import { Routes, Route } from 'react-router-dom';
-import ContentSomethingElse from './content_something_else/Content_something_else';
+import SomethingElse from './something_else/Something_else';
 
 
 const Content = () => {
@@ -13,7 +13,7 @@ const Content = () => {
 
                 <Route path="/*" element={<ContentSnippets />} />
                 <Route path="snippets" element={<ContentSnippets />} />
-                <Route path="somethingElse" element={<ContentSomethingElse />} />
+                <Route path="somethingElse" element={<SomethingElse />} />
             </Routes>
 
         </div>
