@@ -1,23 +1,48 @@
-@import "variables.scss";
+@import "variables.scss"; //просто импорт стилей
+
+//ШАБЛОНЫ
+//можно делать шаблоны через %
+%some_shablone {
+    border: 2px solid red;
+    background: radial-gradient(#172442, rgb(71, 71, 71))
+}
+
+//а можно делать отдельный класс и импортироввать его точно так же как и % (@extend %some_shablone; = @extend .some_shablone;)
+.some_shablone {
+    border: 2px solid red;
+    background: radial-gradient(#172442, rgb(71, 71, 71))
+}
+
+//МИКСИНЫ
+@mixin for_blocks($h, $w, $border) {
+    height: $h;
+    width: $w;
+    border: $border;
+}
+
 
 .something_else {
-    height: 50%;
+    height: calc(100% - 100px);
+    height: 100%;
     width: 100%;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     display: flex;
+    flex-direction: column;
     // justify-content: center;
 
     .something_else_nav {
-        width: 50%;
-        border: 1px solid green;
+        width: 100%;
+        border-bottom: 1px solid green;
         display: flex;
         flex-direction: column;
 
         button {
-            background: none;
+            // background: none;
             cursor: pointer;
             margin: 10px;
             font-size: $myFontSize;
+
+            @extend %some_shablone; //применение шаблона
 
             &:hover {
                 color: blue;
@@ -25,7 +50,21 @@
         }
     }
 
+    .div_with_blocks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 20px;
 
+        .block1,
+        .block2 {
+            @include for_blocks(450px, 250px, 1px solid blue);
+            // width: 250px;
+            // height: 250px;
+            // border: 1px solid #172442;
+        }
+
+    }
 
     .content_something_else {
 

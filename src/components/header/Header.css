@@ -12,6 +12,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: blue;
+    text-decoration: none;
+}
+
+.button_div:hover {
+    text-decoration: underline;
 }
 
 .button_div>button {
@@ -22,4 +28,15 @@
 
 .button_div>button:hover {
     text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.button_div-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100%;
+    cursor: default;
+    color: rgb(23, 23, 112);
+    text-decoration: underline;
 }
