@@ -20,8 +20,6 @@ const Content = () => {
                 <Route path="posts" element={<Posts />} />
                 <Route path="posts/:id" element={<Post />} />
                 <Route path="test-animation" element={<TestAnimation />} />
-
-
             </Routes>
 
         </div>

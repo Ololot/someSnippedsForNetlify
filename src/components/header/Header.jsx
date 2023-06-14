@@ -12,11 +12,10 @@ const Header = () => {
 
     return (
         <div className='header'>
-            <NavLink className={NaLink_class} to={"snippets"}>snippets</NavLink>
-            <NavLink className={NaLink_class} to={"posts"}>posts</NavLink>
-            <NavLink className={NaLink_class} to={"test-animation"}>posts</NavLink>
-            <NavLink className={NaLink_class} to={"somethingElse"}>somethingElse</NavLink>
-
+            <NavLink className={NaLink_class} to={"snippets"}>Snippets</NavLink>
+            <NavLink className={NaLink_class} to={"posts"}>Posts</NavLink>
+            <NavLink className={NaLink_class} to={"test-animation"}>Test-animation</NavLink>
+            <NavLink className={NaLink_class} to={"somethingElse"}>SomethingElse</NavLink>
 
             {/* <div className='button_div'>
                 <button onClick={() => { navigate("snippets") }}>

@@ -1,21 +1,35 @@
-html{
+html {
   height: 100%;
 }
+
+@font-face {
+  font-family: "Nevduplenysh-Regular";
+  font-style: normal;
+  font-weight: 400;
+  /* font-size: 25px; */
+  /* Браузер сначала попробует найти шрифт локально */
+  src: url("../fonts/Nevduplenysh-Regular.otf"),
+}
+
 body {
   height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Nevduplenysh-Regular";
+  font-size: 20px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-#root{
+#root {
   height: 100%;
 }
