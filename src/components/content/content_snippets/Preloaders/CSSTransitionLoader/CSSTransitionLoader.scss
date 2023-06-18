@@ -1,13 +1,13 @@
-.simplePreloader {
+.CSSTransitionLoader {
     display: flex;
     justify-content: center;
     align-items: center;
-    // height: 100%;
     height: 400px;
     width: 100%;
 
     .buttonShowHide {
         position: relative;
+        background-color: aqua;
         left: -250px;
         top: -150px;
         margin: 15px;
@@ -15,29 +15,28 @@
 
     .circle {
         position: absolute;
-
         height: 150px;
         width: 150px;
         border-radius: 50%;
         border: 10px dashed black;
     }
 
-    .circle.entering {
+    .circle-show {
         animation: showLoader 0.5s forwards;
     }
 
-    .circle.entered {
+    .circle-rotate {
         animation: rotacionLoader 0.5s infinite;
     }
 
-    .circle.exiting {
-        animation: showLoader 0.51s reverse;
+    .circle-hide {
+        animation: showLoader 0.501s reverse;
     }
 
-    .circle.exeted {
-        top: -200px;
-        opacity: 0;
-    }
+    // .circle-exit-done {
+    //     top: -200px;
+    //     // opacity: 0;
+    // }
 
 
     @keyframes showLoader {

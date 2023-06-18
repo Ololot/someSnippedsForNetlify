@@ -1,43 +1,70 @@
-.simplePreloader {
+.SwitchTransitionLoader {
     display: flex;
     justify-content: center;
     align-items: center;
-    // height: 100%;
     height: 400px;
     width: 100%;
 
     .buttonShowHide {
         position: relative;
+        background-color: rgb(105, 100, 255);
         left: -250px;
         top: -150px;
         margin: 15px;
     }
 
-    .circle {
-        position: absolute;
+    .buttonMode {
+        position: relative;
+        background-color: rgb(105, 100, 255);
+        left: -250px;
+        top: -125px;
+        margin: 15px;
+    }
 
+    .circleRed {
+        position: absolute;
         height: 150px;
         width: 150px;
         border-radius: 50%;
-        border: 10px dashed black;
+        border: 10px dashed rgb(255, 0, 0);
     }
 
-    .circle.entering {
+    .circleBlue {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 10px dashed rgb(13, 0, 255);
+    }
+
+    .circleRed-show {
         animation: showLoader 0.5s forwards;
     }
 
-    .circle.entered {
+    .circleRed-rotate {
         animation: rotacionLoader 0.5s infinite;
     }
 
-    .circle.exiting {
-        animation: showLoader 0.51s reverse;
+    .circleRed-hide {
+        animation: showLoader 0.501s reverse;
     }
 
-    .circle.exeted {
-        top: -200px;
-        opacity: 0;
+    .circleBlue-show {
+        animation: showLoader 0.5s forwards;
     }
+
+    .circleBlue-rotate {
+        animation: rotacionLoader 0.5s infinite;
+    }
+
+    .circleBlue-hide {
+        animation: showLoader 0.501s reverse;
+    }
+
+    // .circle-exit-done {
+    //     top: -200px;
+    //     // opacity: 0;
+    // }
 
 
     @keyframes showLoader {

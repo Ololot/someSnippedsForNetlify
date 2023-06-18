@@ -10,7 +10,7 @@ const SimplePreloader = () => {
     return (
         <div className="simplePreloader">
             <button className='buttonShowHide' onClick={() => { setVisible(!visible) }}>
-                show
+                {visible ? "hide" : "show"}
             </button>
             <Transition
                 in={visible}
